@@ -1,0 +1,62 @@
+<mat-toolbar color="primary">
+
+  &nbsp;&nbsp;&nbsp;&nbsp;<span>Connexion</span>
+  <span class="fill-toolbar"></span>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+
+            <button mat-menu-item>
+              <span><a id="sous-lien" href="https://gesticleanup.com/page/help">Support</a></span>
+            </button>
+
+            <button mat-menu-item >
+              <span><a id="sous-lien" href="./besoin-daide">Aide</a></span>
+            </button>
+
+    </mat-menu>
+  </span>
+</mat-toolbar><br/>
+
+
+
+<div class="figure">
+
+  <img [src]="netImage">
+  <figcaption class="phrase" >Connectez vous à votre compte GestiClean Up'</figcaption>
+  <br/>
+  <mat-card class="figure">
+    <img id="img-person" src="assets/img/person.png">
+
+    <mat-list role="list">
+
+      <mat-list-item role="listitem" class="container list-item-72">
+        <mat-form-field>
+          <mat-icon matPrefix class="black_icon material-icons">person</mat-icon>
+          <input #pseudo maxlength="30"   matInput   placeholder="Connexion">
+          <mat-hint align="end">{{pseudo.value.length}} / 30</mat-hint>
+        </mat-form-field>
+      </mat-list-item>
+      <br/>
+
+      <mat-list-item role="listitem" class="container list-item-72">
+        <mat-form-field>
+          <mat-icon matPrefix class="black_icon material-icons">https</mat-icon>
+          <input type="password"  matInput   placeholder="Mot de passe">
+        </mat-form-field>
+      </mat-list-item>
+
+    </mat-list><br/>
+    <button routerLink="/search-client"  class="bouton" mat-raised-button > SE CONNECTER</button>
+      <br/><br/><br/><br/><br/>
+
+      <a id="aide" href="./besoin-daide">Besoin d'aide ?</a>
+      <a id="pass_oublier" href="./mdp-oublier">Mot de passe oublié ?</a>
+    </mat-card>
+
+</div>
+
+

@@ -1,0 +1,139 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button >
+        <mat-icon>menu</mat-icon>
+  </button>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;<span>Acceuil</span>
+  <span class="fill-toolbar"></span>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    <button mat-icon-button>
+        <mat-icon>apps</mat-icon>
+    </button>
+
+    <button routerLink="/processus-recherche" mat-icon-button >
+        <mat-icon>search</mat-icon>
+    </button>
+
+
+  <span>
+
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+        <mat-menu #menu="matMenu">
+
+                <button mat-menu-item>
+                  <span><a id="sous-lien" href="https://gesticleanup.com/page/help">Support</a></span>
+                </button>
+
+                <button mat-menu-item >
+                  <span><a id="sous-lien" href="./besoin-daide">Aide</a></span>
+                </button>
+
+        </mat-menu>
+  </span>
+</mat-toolbar>
+
+
+
+
+<div class="conteneur">
+
+  <a class="example-card" href="#">
+   <mat-card >
+      <img class="icon-cards" src="assets/img/ic_add_shopping_cart_white_48px.svg">
+      <mat-card-content><br/>
+          <div class="card-label">
+            Prendre une commande
+          </div>
+      </mat-card-content>
+    </mat-card>
+  </a>
+
+  <a class="example-card" href="#">
+   <mat-card >
+       <img class="icon-cards" src="assets/img/ic_reply_all_white_48px (1).svg">
+       <mat-card-content><br/>
+         <div class="card-label">
+           Restituer une commandes
+         </div>
+          </mat-card-content>
+     </mat-card>
+  </a>
+
+  <a class="example-card" href="#">
+   <mat-card >
+       <img class="icon-cards" src="assets/img/croix.svg">
+       <mat-card-content><br/>
+          <div class="card-label">
+            Annuler des groupes de commandes
+          </div>
+       </mat-card-content>
+     </mat-card>
+  </a>
+
+  <a class="example-card" href="#">
+   <mat-card >
+       <img class="icon-cards" src="assets/img/search.svg">
+       <mat-card-content><br/>
+        <div class="card-label">
+          Consulter les commandes
+        </div>
+       </mat-card-content>
+     </mat-card>
+  </a>
+
+  <a class="example-card" href="#">
+   <mat-card >
+       <img class="icon-cards" src="assets/img/check.svg">
+       <mat-card-content><br/>
+          <div class="card-label">
+            Ranger une commande
+          </div>
+       </mat-card-content>
+     </mat-card>
+  </a>
+
+  <a class="example-card" href="#">
+     <mat-card >
+       <img class="icon-cards" src="assets/img/calendrier.svg">
+       <mat-card-content><br/>
+         <div class="card-label">
+           Consulter votre planning de travail
+         </div>
+
+       </mat-card-content>
+     </mat-card>
+  </a>
+
+  <a class="example-card" href="#">
+   <mat-card >
+          <img class="icon-cards" src="assets/img/person.svg">
+       <mat-card-content><br/>
+           <div class="card-label">
+             Consulter vos fiches clients
+           </div>
+       </mat-card-content>
+     </mat-card>
+  </a>
+
+  <a class="example-card" href="#">
+   <mat-card>
+       <img class="icon-cards" src="assets/img/euro.svg">
+       <mat-card-content><br/>
+           <div class="card-label">
+             Gérer les encaissements
+           </div>
+       </mat-card-content>
+     </mat-card>
+  </a>
+
+
+
+
+</div>
+
+

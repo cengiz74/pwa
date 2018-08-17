@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button>
+      <mat-icon aria-label="Example icon-button with a heart icon">clear</mat-icon>
+    </button>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <p></p>
+  <span class="fill-toolbar"></span>
+  <span>
+    <button mat-icon-button>
+
+      <mat-icon>check</mat-icon>
+    </button>
+
+  </span>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;
+
+  <span>
+
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+
+        <mat-icon>more_vert</mat-icon>
+      </button>
+
+          <mat-menu #menu="matMenu">
+
+            <button mat-menu-item>
+              <span>Support</span>
+            </button>
+
+            <button mat-menu-item >
+              <span>Aide</span>
+            </button>
+
+          </mat-menu>
+  </span>
+</mat-toolbar>

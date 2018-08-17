@@ -1,0 +1,23 @@
+.fill-toolbar {
+  flex : 1 1 auto;
+}
+
+mat-form-field{
+  width: 100%;
+}
+
+#input_mail{
+  width:100%;
+}
+
+#mail-icon{
+  color:#626262;
+}
+
+span{
+font-weight:lighter;
+}
+
+a{
+  text-decoration:none;
+}

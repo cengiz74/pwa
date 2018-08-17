@@ -1,0 +1,67 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button>
+    <mat-icon (click)="goBack()">clear</mat-icon>
+  </button>
+  <span>{{client?.name}}</span>
+  <span class="fill-toolbar"></span>
+  <span>
+    <button mat-icon-button>
+      <mat-icon (click)="save()">check</mat-icon>
+    </button>
+  </span>
+  <span>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+
+          <mat-menu #menu="matMenu">
+
+            <button mat-menu-item>
+              <span>Support</span>
+            </button>
+
+            <button mat-menu-item >
+              <span>Aide</span>
+            </button>
+
+          </mat-menu>
+  </span>
+</mat-toolbar>
+
+
+<mat-tab-group backgroundColor="primary">
+
+
+     <mat-tab [label]="client?.name">
+
+   <app-client [client]="client"></app-client>
+
+
+  </mat-tab>
+
+<mat-tab label="Commandes">
+
+
+
+
+    <app-commandes></app-commandes>
+
+
+
+</mat-tab>
+
+  <mat-tab label="Ticket de vente">
+
+      <app-tickets></app-tickets>
+
+  </mat-tab>
+
+  <mat-tab label="Historique fidélité">
+    <app-historique></app-historique>
+  </mat-tab>
+</mat-tab-group>
+
+
+
+
+

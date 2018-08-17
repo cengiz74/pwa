@@ -1,0 +1,39 @@
+/* CSS pour Client */
+
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+mat-form-field{
+width: 100%;
+
+}
+
+mat-icon{
+
+color:#626262;
+}
+
+.container{
+
+width:100%;
+}
+
+input{
+width:100%;
+}
+
+mat-list-item.list-item-72 {
+  height: 100%;
+}
+
+mat-list-item.list-item-56 {
+  height: 56px;
+}
+
+
+

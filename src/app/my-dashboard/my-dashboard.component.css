@@ -1,0 +1,18 @@
+p{
+margin-left:20px;
+font-size:14px;
+}
+
+.fill-toolbar {
+  flex : 1 1 auto;
+}
+
+.mat-icon-button{
+  color:white;
+}
+
+i{
+  color:white;
+  margin-top:10px;
+
+}

@@ -1,0 +1,90 @@
+<mat-toolbar color="primary">
+
+ <button mat-icon-button>
+      <mat-icon (click)="goBack()">arrow_back</mat-icon>
+ </button>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <span>Aide à la connexion</span>
+  <span class="fill-toolbar"></span>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+             <span><a id="sous-lien" href="https://gesticleanup.com/page/help">Support</a></span>
+            </button>
+            <button mat-menu-item >
+               <span><a id="sous-lien" href="./besoin-daide">Aide</a></span>
+            </button>
+    </mat-menu>
+  </span>
+
+</mat-toolbar><br/>
+
+
+  <mat-card class="info">
+
+      <mat-icon id="wifi_beug">perm_scan_wifi</mat-icon>&nbsp;&nbsp; <span id="probleme">Problème de connexion </span><br/><br/>
+      <span id="info_probleme">Si vous avez oublié votre identifiant ou votre mot de passe, merci de cliquer sur "Mot de passe oublié ?".</span>
+
+  </mat-card><br/>
+
+  <mat-card class="info2">
+      <strong><span id="probleme2">Encore besoin d'aide ?</span></strong><br/>
+      <ul>
+        <li id="info_probleme" >Poser une question sur le <a href="https://gesticleanup.com/forum/aide-1">forum communautaire</a> de GestiClean Up'.</li>
+        <li id="info_probleme" >Contacter notre <a href="https://gesticleanup.com/page/help">service technique</a>.</li>
+      </ul>
+  </mat-card>
+
+<br/><br/><br/><br/>
+
+
+
+<div class="conteneur">
+
+<mat-card id="processus">
+  <mat-grid-list cols="1">
+   <mat-grid-tile [style.border-right]="'1px'">
+     <img src="assets/img/commande.svg">
+   </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>
+
+  <mat-card id="processus">
+  <mat-grid-list cols="1">
+   <mat-grid-tile [style.border-right]="'1px'">
+     <img src="assets/img/commande.svg">
+   </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>
+
+  <mat-card id="processus">
+  <mat-grid-list cols="1">
+   <mat-grid-tile [style.border-right]="'1px'">
+     <img src="assets/img/commande.svg">
+   </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>
+
+
+
+</div>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+  </mat-grid-tile>
+
+</mat-grid-list>

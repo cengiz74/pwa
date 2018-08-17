@@ -1,0 +1,64 @@
+<br/>
+<div class="example-container">
+
+  <mat-list role="list">
+
+    <mat-list-item role="listitem" class="container list-item-72">
+      <mat-form-field>
+        <mat-icon matPrefix class="black_icon material-icons">person</mat-icon>
+        <input #ClientName [ngModel]="client?.name" (ngModelChange)="client.name = $event" matInput placeholder="Nom">
+         <mat-hint align="end">{{ClientName.value.length}}</mat-hint>
+      </mat-form-field>
+    </mat-list-item>
+
+    <mat-list-item role="listitem" class="container list-item-72">
+      <mat-form-field>
+        <mat-icon matPrefix class="black_icon material-icons">person</mat-icon>
+        <input matInput #prenom placeholder="Prénom">
+         <mat-hint align="end">{{prenom.value.length}}</mat-hint>
+      </mat-form-field>
+    </mat-list-item>
+
+    <mat-list-item role="listitem" class="container list-item-72">
+      <mat-form-field>
+         <mat-icon matPrefix class="black_icon material-icons">local_phone</mat-icon>
+         <input matInput #num placeholder="Numéro de téléphone">
+          <mat-hint align="end">{{num.value.length}}</mat-hint>
+      </mat-form-field>
+    </mat-list-item>
+
+    <mat-list-item role="listitem" class="container list-item-72">
+      <mat-form-field>
+         <mat-icon matPrefix class="black_icon material-icons">contact_mail</mat-icon>
+         <input matInput #email placeholder="Email">
+          <mat-hint align="end">{{email.value.length}}</mat-hint>
+      </mat-form-field>
+    </mat-list-item>
+
+    <mat-list-item role="listitem" class="container list-item-72">
+      <mat-form-field class="example-full-width" >
+         <mat-icon matPrefix class="black_icon material-icons">comment</mat-icon>
+         <input matInput #commentaire  placeholder="Commentaire">
+         <mat-hint align="end">{{commentaire.value.length}}</mat-hint>
+      </mat-form-field>
+    </mat-list-item>
+
+    <mat-list-item role="listitem" class="container list-item-56">
+            <mat-icon matPrefix class="black_icon material-icons">card_giftcard</mat-icon>
+            <mat-slide-toggle>Activer la fidélité </mat-slide-toggle>
+    </mat-list-item>
+
+    <mat-list-item role="listitem" class="container list-item-56">
+            <mat-icon matPrefix class="black_icon material-icons">perm_phone_msg</mat-icon>
+            <mat-slide-toggle>Activer l'envoi de SMS lors du rangement de commande</mat-slide-toggle>
+
+    </mat-list-item>
+
+    <mat-list-item role="listitem" class="container list-item-56">
+            <mat-icon matPrefix class="black_icon material-icons">mail</mat-icon>
+            <mat-slide-toggle>Activer l'envoi d'email lors du rangement de commande</mat-slide-toggle>
+
+    </mat-list-item>
+  </mat-list>
+
+</div>

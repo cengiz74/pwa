@@ -1,0 +1,112 @@
+mat-toolbar{
+  z-index:1;
+  position:fixed;
+  top: 0%;
+
+}
+
+
+.conteneur{
+  padding-top:70px;
+}
+
+.fill-toolbar {
+  flex : 1 1 auto;
+}
+
+a{
+  text-decoration:none;
+  margin-top:5px;
+}
+
+.conteneur {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+
+mat-card{
+  margin:1px;
+  padding-left:0px;
+  padding-right:0px;
+  background-color:#E91E63;
+  padding:0px;
+}
+
+img.icon-cards{
+  color:#FFFFFF;
+  opacity:0.8;
+  width:90%;
+  margin:10% 5% 0% 5%;
+}
+
+mat-card-content{
+  background-color: rgba(0,0,0,0.5);
+  color: #FFFFFF;
+  height:69px;
+  margin:1;
+  padding-left:0px;
+  padding-right:0px;
+  margin-top:10.5px;
+}
+
+span{
+  margin-left:15px;
+  font-weight: 500;
+
+}
+
+#travail{
+  margin-left:15px;
+}
+
+
+#groupes_commandes{
+  margin-left:15px;
+}
+
+.card-label{
+  padding:0 15px;
+}
+
+
+@media only screen and (min-device-width: 600px){
+.example-card{
+display:inline-block;
+margin: 1px;
+width:220px;
+
+}
+}
+
+@media only screen and (max-device-width: 599px){
+.example-card{
+display:inline-block;
+margin: 1px;
+width:calc(50% - 2px);
+justify-content: center;
+}
+
+.icon-cards{
+
+  color:#FFFFFF;
+  opacity:0.8;
+
+}
+
+span{
+  text-align:justify;
+}
+
+
+mat-card-content{
+  height:60px;
+}
+
+.card-label{
+  padding:0 15px;
+}
+
+
+}

@@ -1,0 +1,72 @@
+.fill-toolbar {
+  flex : 1 1 auto;
+}
+
+span{
+font-weight:lighter;
+}
+
+.info{
+  margin-left:1%;
+  width:90%;
+  height:100%;
+
+}
+
+.info2{
+  margin-left:1%;
+  width:90%;
+  height:100%;
+
+}
+
+#wifi_beug{
+  color:#626262;
+}
+
+#probleme{
+  font-size:34px;
+  color:#626262;
+  font-weight:bold;
+}
+
+#probleme2{
+  font-size:18x;
+  color:#626262;
+}
+
+#info_probleme{
+  color:#626262;
+}
+
+
+
+.conteneur {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top:7px;
+}
+
+#processus{
+  height: 300px;
+  width: 218px;
+  background-color:grey;
+  margin:1px;
+}
+
+img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+
+mat-grid-tile.mat-grid-tile{
+  min-width:100px;
+}
+
+
+
+
+
+

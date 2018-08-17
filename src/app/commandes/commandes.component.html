@@ -1,0 +1,27 @@
+<div class="blanc">
+      &nbsp;&nbsp;&nbsp;
+      <span id="info">COMMANDES DE {{client?.name| uppercase}}:</span><br/><br/><br/>
+
+
+       &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+       <i class="material-icons">youtube_searched_for</i>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+       <mat-form-field>
+            <mat-label>Status des commandes</mat-label>
+            <mat-select #fontSize value="16px" (selectionChange)="triggerResize()">
+              <mat-option value="Toutes les commandes">Toutes les commandes</mat-option>
+              <mat-option value="Commandes non rangées">Commandes non rangées</mat-option>
+              <mat-option value="Commandes rangées">Commandes rangées</mat-option>
+              <mat-option value="Commandes non livrées">Commandes non livrées</mat-option>
+              <mat-option value="Commandes livrées">Commandes livrées</mat-option>
+
+            </mat-select>
+       </mat-form-field>
+
+
+</div>

@@ -1,0 +1,69 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button>
+      <mat-icon (click)="goBack()">clear</mat-icon>
+    </button>
+  &nbsp;&nbsp;&nbsp;&nbsp;<SPAN id="titre">Sélection client</SPAN>
+
+
+  <span class="fill-toolbar"></span>
+  <span>
+    <button mat-icon-button>
+      <mat-icon aria-label="Example icon-button with a heart icon">check</mat-icon>
+    </button>
+
+  </span>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;
+
+  <span>
+
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+
+          <mat-menu #menu="matMenu">
+
+            <button mat-menu-item>
+              <span>Support</span>
+            </button>
+
+            <button mat-menu-item >
+              <span>Aide</span>
+            </button>
+
+          </mat-menu>
+  </span>
+</mat-toolbar><br/>
+
+
+<mat-card id="search-card">
+
+
+    <mat-form-field class="example-form-field">
+      <mat-icon matPrefix class="black_icon material-icons">search</mat-icon>
+      <input #searchBox id="search-box" (keyup)="search(searchBox.value)" matInput type="text" placeholder="Saisissez le nom du client" [(ngModel)]="value"/>
+      <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon class="black_icon" >close</mat-icon>
+      </button>
+    </mat-form-field>
+</mat-card>
+
+<br/>
+
+<mat-card id="list-card">
+  <mat-list role="list">
+    <a id="lien_client_recherche" *ngFor="let client of clients$ | async" routerLink="/detailclient/{{client.id}}">
+      <mat-list-item role="listitem">
+        {{client.name | uppercase }}
+      </mat-list-item>
+    </a>
+  </mat-list>
+</mat-card>
+
+
+<button routerLink="/creationclient" mat-fab>
+  <mat-icon >add</mat-icon>
+</button>
+
+
+

@@ -1,0 +1,68 @@
+.info_tickets{
+
+background-color:#EEEEEE;
+height:90px;
+}
+
+#vente{
+
+font-size:13px;
+color:#808080;
+}
+
+#date{
+
+font-size:13px;
+color:#808080;
+}
+
+
+
+mat-list{
+
+
+background-color:white;
+
+
+}
+
+.mat-line[mat-line] {
+
+  display:flex;
+  align-items: baseline;
+}
+
+
+.footer{
+position:fixed;
+bottom: 0;
+left: 0;
+right: 0;
+}
+
+
+.info_tickets:hover{
+background-color:red;
+
+}
+
+.fill-list{
+flex: 1 1 auto;
+}
+
+#prix{
+color:white;
+}
+
+
+
+#info_prix{
+background-color:#686868;
+
+}
+
+
+
+
+
+
