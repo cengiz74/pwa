@@ -36,4 +36,10 @@ export class CommandesComponent implements OnInit {
      .subscribe(() => this.goBack());
   }
 
+  triggerResize(): void {
+   console.log("coucou");
+  }
+
+
+
 }
